@@ -1,0 +1,58 @@
+Day 1:
+
+basics:
+
+variables
+constants
+
+const 
+var
+let 
+
+data types:
+
+- number
+- string
+- boolean
+- null 
+- undefined 
+
+- array
+- object 
+
+comments - single line and multi-line comments 
+
+Day 2:
+
+if 
+if else 
+if else if 
+
+let key words 
+scopes in javascript 
+
+
+loops in python / javascript 
+
+1. entry controlled loops
+2. exit controlled loops
+
+Day 3:
+
+Typecasting / Type Coercion
+
+String to Number conversion
+parseInt
+Number
+
+Number to String conversion
+toString()
+String function
+
+parseFloat
+
+Different of Map and forEach
+
+1. Map function la return use pannalam but forEach la return use panna mudiyathu
+2. Map ffunction oru new array return pannum but forEach oru new array return pannathu.
+3. Map function la step by step ah pannanum but forEach la step by step ah panna theva illa.

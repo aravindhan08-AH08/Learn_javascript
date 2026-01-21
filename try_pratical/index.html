@@ -52,11 +52,30 @@
     });
 
     // set Interval
-    let x = 1000;
-    let timer = 2000
-    setInterval(() => {
-        x = x - 5;
-        console.log("the current value x is: " + x);
-    }, timer);
+    // let x = 1000;
+    // let timer = 2000
+    // setInterval(() => {
+    //     x = x - 5;
+    //     console.log("the current value x is: " + x);
+    // }, timer);
+
+    // Set Timeout
+    // var examInstruction = 'Time is over'
+    // var timer = 10000;
+    // setTimeout(() => {
+    //     console.log(examInstruction)
+    // }, timer);
+    
+    // Ithu Birthday wishes countdown program
+    var wishes = "Happy Birthday !!!";
+    var countDown = 10;
+    var timer = 1000;
+    let birthday = setInterval(() => {
+        console.log(countDown--);
+        if (countDown == 0){
+            console.log(wishes);
+            clearInterval(birthday);
+        }
+    }, 1000)
 </script>
 </html>

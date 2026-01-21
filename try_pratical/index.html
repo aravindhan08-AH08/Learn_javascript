@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summa oru try</title>
+    <style>
+        .primary {
+            background-color: cornflowerblue;
+            color: wheat;
+            padding: 10px;
+            border: 1px solid white;
+        }
+        #box {
+            width: 300px;
+            height: 150px;
+            border-radius: 8px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <!-- Input box -->
+    <input type="text" id="name" placeholder="enter your name"/>
+    <br>
+    <br>
+    <!-- Button -->
+    <button id="primary">Click Me</button>
+    <br>
+    <br>
+    <!-- Box -->
+    <div id="box"></div>
+</body>
+<script>
+    // declaring variable
+    var myInputBox = document.getElementById("name");
+    console.log(myInputBox);
+
+    // button click -> your button is clicked
+    var myButton = document.getElementById("primary");
+    console.log(myButton);
+
+    // Use arrow function - not recommended
+    // myButton.addEventListener("click",() => {
+    //     console.log("your button is clicked");
+    // });
+
+    // Don't use arrow function
+    myButton.addEventListener("click", function() {
+        console.log("your button is clicked");
+    });
+</script>
+</html>

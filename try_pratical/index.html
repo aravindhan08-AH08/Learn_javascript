@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summa oru try</title>
+    <title>Document</title>
     <style>
         .primary {
             background-color: cornflowerblue;
@@ -31,6 +31,7 @@
     <!-- Box -->
     <div id="box"></div>
 </body>
+<!-- Ethu la epo ena pannirukkom na JS add panni try panirukkom usefull for your study. -->
 <script>
     // declaring variable
     var myInputBox = document.getElementById("name");
@@ -49,5 +50,12 @@
     myButton.addEventListener("click", function() {
         console.log("your button is clicked");
     });
+
+    // set Interval
+    let x = 1;
+    setInterval(() => {
+        x = x + 1;
+        console.log("the current value x is: " + x);
+    }, 1000);
 </script>
 </html>

@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .primary {
-            background-color: cornflowerblue;
+        #primary {
+            background-color: rgb(50, 113, 231);
             color: wheat;
             padding: 10px;
             border: 1px solid white;
+            border-radius: 8px;
+            width: 100px;
         }
         #box {
             width: 300px;
@@ -33,23 +35,22 @@
 </body>
 <!-- Ethu la epo ena pannirukkom na JS add panni try panirukkom usefull for your study. -->
 <script>
-    // declaring variable
-    var myInputBox = document.getElementById("name");
-    console.log(myInputBox);
-
-    // button click -> your button is clicked
-    var myButton = document.getElementById("primary");
-    console.log(myButton);
+        //  declaring one variable
+        // for input box
+        var myInputBox = document.getElementById('name');
+        // button click -> your button is clicked
+        var myButton = document.getElementById('primary');
+        var Box = document.getElementById('myBox');
+        myButton.addEventListener('click', function () {
+            let typedContent = myInputBox.value;
+            // Box.innerText = typedContent;
+            Box.innerHTML = `<h1>${typedContent}</h1>`;
+        });
 
     // Use arrow function - not recommended
     // myButton.addEventListener("click",() => {
     //     console.log("your button is clicked");
     // });
-
-    // Don't use arrow function
-    myButton.addEventListener("click", function() {
-        console.log("your button is clicked");
-    });
 
     // set Interval
     // let x = 1000;
@@ -67,15 +68,17 @@
     // }, timer);
     
     // Ithu Birthday wishes countdown program
-    var wishes = "Happy Birthday !!!";
-    var countDown = 10;
-    var timer = 1000;
-    let birthday = setInterval(() => {
-        console.log(countDown--);
-        if (countDown == 0){
-            console.log(wishes);
-            clearInterval(birthday);
-        }
-    }, 1000)
+    // var wishes = "Happy Birthday !!!";
+    // var countDown = 10;
+    // var timer = 1000;
+    // let birthday = setInterval(() => {
+    //     console.log(countDown--);
+    //     if (countDown == 0){
+    //         console.log(wishes);
+    //         clearInterval(birthday);
+    //     }
+    // }, 1000);
+
+
 </script>
 </html>

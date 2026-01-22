@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body></body>
+    <script>
+        const url =
+            'https://restcountries.com/v3.1/all?fields=name,capital,population,languages,region,area,continents,unMember';
+
+        fetch(url)
+            .then((response) => response.json())
+            .then((result) => {
+                console.log(result);
+
+                // Display all the capitals of the countries
+                console.log(result.map((country) => {
+                    let myCapital = country.capital;
+                    return myCapital;
+                }))
+                // filter the names
+                console.log(result.map((country) => {
+                    return country.name.common;
+                }))
+                // Display all countries that are not UN members.
+                console.log(result.filter((el) => {
+                    return el.unMember == false;
+                }))
+                // Display the countries that are in Asia
+                console.log(result.filter((country)=> {
+                    return country.region == "Asia"
+                }))
+                // Display the countries that have population greater than 10 million
+                // Display the countries official Names along with their capitals alone from the response
+                // Find the Total Population of All Countries
+                console.log(result.reduce((acc, curr) => {
+                    console.log("acc: ", acc);
+                }))
+                // Count how many countries belong to each region
+                // Display countries that have more than one capital
+                // Display countries that are UN members and that are in Asia
+                // Find the country with the lowest area
+                // Display countries that are NOT UN members and are in Europe
+                // Display country name and area for each country
+                // Display country name along with number of languages spoken
+            });
+    </script>
+</html>

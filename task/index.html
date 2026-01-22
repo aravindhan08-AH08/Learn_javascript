@@ -33,18 +33,60 @@
                     return country.region == "Asia"
                 }))
                 // Display the countries that have population greater than 10 million
+                console.log(
+                    result.filter((eachCountry) => {
+                        return eachCountry.population > 10000000;
+                    })
+                )
                 // Display the countries official Names along with their capitals alone from the response
+                console.log(
+                    result.map((country) => {
+                        let output = {
+                            capital: '',
+                            country: ''
+                        }
+                    })
+                )
                 // Find the Total Population of All Countries
-                console.log(result.reduce((acc, curr) => {
-                    console.log("acc: ", acc);
-                }))
-                // Count how many countries belong to each region
+                console.log(
+                  result.reduce((sum, el) => {
+                    return sum + el.population;
+                  }, 0),
+                );
+                // Count how many countries belong to each
                 // Display countries that have more than one capital
+                console.log(
+                    result.filter((country) => {
+                        let length = country.capital.length;
+                        return length > 1;
+                    })
+                );
                 // Display countries that are UN members and that are in Asia
+                console.log(
+                    result.filter((eachCountry) => {
+                        return (
+                        eachCountry.unMember == true && 
+                        eachCountry.region == "Asia"
+                        );
+                    })
+                );
                 // Find the country with the lowest area
                 // Display countries that are NOT UN members and are in Europe
-                // Display country name and area for each country
+                // Display country name and capital for each country
+                console.log(result.map((country) => {
+                    let output = {
+                        capital: '',
+                        country: ''
+                    };
+                    // update my country
+                    output.country = country.name.common;
+
+                    // update my capital
+                    output.capital = country.capital;
+                    return output;
+                }))
                 // Display country name along with number of languages spoken
+                // count how many countries belong to each region
             });
     </script>
 </html>

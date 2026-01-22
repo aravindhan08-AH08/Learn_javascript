@@ -18,11 +18,15 @@
             height: 150px;
             border-radius: 8px;
             border: 2px solid green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 <body>
     <!-- Input box -->
+    <label>Word Count</label><br>
     <input type="text" id="name" placeholder="enter your name"/>
     <br>
     <br>
@@ -38,14 +42,20 @@
         //  declaring one variable
         // for input box
         var myInputBox = document.getElementById('name');
+
+        // button
         var myButton = document.getElementById('primary');
+
+        // Empty box
         var Box = document.getElementById('box');
 
-        myButton.addEventListener('click', function () {
+        // event handing
+        myButton.addEventListener('click', () => {
             let typedContent = myInputBox.value;
 
             // character count only
-            let count = typedContent.length;
+            let words = typedContent.split(' ');
+            let count = words.length;
 
             // Inside the box word count number only.
             Box.innerHTML = `<h1>${count}</h1>`;

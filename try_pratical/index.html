@@ -38,13 +38,17 @@
         //  declaring one variable
         // for input box
         var myInputBox = document.getElementById('name');
-        // button click -> your button is clicked
         var myButton = document.getElementById('primary');
-        var Box = document.getElementById('myBox');
+        var Box = document.getElementById('box');
+
         myButton.addEventListener('click', function () {
             let typedContent = myInputBox.value;
-            // Box.innerText = typedContent;
-            Box.innerHTML = `<h1>${typedContent}</h1>`;
+
+            // character count only
+            let count = typedContent.length;
+
+            // Inside the box word count number only.
+            Box.innerHTML = `<h1>${count}</h1>`;
         });
 
     // Use arrow function - not recommended

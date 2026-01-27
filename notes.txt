@@ -56,3 +56,13 @@ Different of Map and forEach
 1. Map function la return use pannalam but forEach la return use panna mudiyathu
 2. Map ffunction oru new array return pannum but forEach oru new array return pannathu.
 3. Map function la step by step ah pannanum but forEach la step by step ah panna theva illa.
+
+
+
+for in loop
+for of loop
+rest and spread operator
+array and object destructuring
+default parameters
+
+28/01/2026

@@ -79,5 +79,5 @@ console.log('Product Names and Prices:', productNamesAndPrices);
 // - Create an array containing only the tags array for each product, but convert all tags to UPPERCASE.
 let upperCaseTags = Products.map((product) => product.tags.map((tag) => tag.toUpperCase()));
 console.log('UpperCase Tags: ', upperCaseTags);
-// - Calculate the total dollar value of the entire warehouse `(sum of price * stock for all items)`
+// - Calculate the total dollar value of the entire warehouse `(sum of price * stock for all items)`7
 // - Filter for products that include the tag "work".

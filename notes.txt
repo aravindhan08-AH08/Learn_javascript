@@ -66,3 +66,9 @@ array and object destructuring
 default parameters
 
 28/01/2026
+DOM
+createElement
+classList
+style
+JavaScript
+closures

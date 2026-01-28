@@ -8,14 +8,14 @@ console.log(numbers);
 let fruits = ["Apple", "Banana", "Mango", "Orange"];
 
 console.log(fruits[1]);
-console.log(fruits[3])
+console.log(fruits[3]);
 
 // Question 3
 // Create an array of 3 elements. Change the 2nd element to "modified" and print the array.
-let movies = ["singam", "leo", "coolie", "Thuglife"]
-console.log(movies)
+let movies = ["singam", "leo", "coolie", "Thuglife"];
+console.log(movies);
 
-movies[3] = "Jana Nayagan"
+movies[3] = "Jana Nayagan";
 console.log(movies);
 
 // Question 4
@@ -27,7 +27,7 @@ console.log(colors.length);
 // Write a program that iterates over an array of numbers and prints each element.
 let mark = [85, 90, 78, 92, 88];
 for (let i = 0; i < mark.length; i = i + 1) {
-    console.log(mark[i]);
+  console.log(mark[i]);
 }
 
 // Question 6
@@ -35,7 +35,7 @@ for (let i = 0; i < mark.length; i = i + 1) {
 let scores = [10, 20, 30, 40, 50];
 let sum = 0;
 for (let i = 0; i < scores.length; i = i + 1) {
-    sum = sum + scores[i];
+  sum = sum + scores[i];
 }
 console.log("Sum:", sum);
 
@@ -43,5 +43,5 @@ console.log("Sum:", sum);
 // Write a program that uses the `for...of` loop to print each element in an array of strings.
 let cities = ["New York", "india", "London", "Tokyo"];
 for (let city of cities) {
-    console.log(city);
+  console.log(city);
 }

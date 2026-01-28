@@ -64,14 +64,14 @@
 // }
 
 var p = 20; // number format
-var q = '20'; // string format
+var q = "20"; // string format
 
 console.log(typeof p);
 console.log(typeof q);
 
-if (p == q){
-    // type casting
-    console.log("Both are equal");
+if (p == q) {
+  // type casting
+  console.log("Both are equal");
 } else {
-    console.log("Both are not equal");
+  console.log("Both are not equal");
 }

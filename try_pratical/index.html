@@ -1,65 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #primary {
-            background-color: rgb(50, 113, 231);
-            color: wheat;
-            padding: 10px;
-            border: 1px solid white;
-            border-radius: 8px;
-            width: 100px;
-        }
-        #box {
-            width: 300px;
-            height: 150px;
-            border-radius: 8px;
-            border: 2px solid green;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+      #primary {
+        background-color: rgb(50, 113, 231);
+        color: wheat;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 8px;
+        width: 100px;
+      }
+      #box {
+        width: 300px;
+        height: 150px;
+        border-radius: 8px;
+        border: 2px solid green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Input box -->
-    <label>Word Count</label><br>
-    <input type="text" id="name" placeholder="enter your name"/>
-    <br>
-    <br>
+    <label>Word Count</label><br />
+    <input type="text" id="name" placeholder="enter your name" />
+    <br />
+    <br />
     <!-- Button -->
     <button id="primary">Click Me</button>
-    <br>
-    <br>
+    <br />
+    <br />
     <!-- Box -->
     <div id="box"></div>
-</body>
-<!-- Ethu la epo ena pannirukkom na JS add panni try panirukkom usefull for your study. -->
-<script>
-        //  declaring one variable
-        // for input box
-        var myInputBox = document.getElementById('name');
+  </body>
+  <!-- Ethu la epo ena pannirukkom na JS add panni try panirukkom usefull for your study. -->
+  <script>
+    //  declaring one variable
+    // for input box
+    var myInputBox = document.getElementById("name");
 
-        // button
-        var myButton = document.getElementById('primary');
+    // button
+    var myButton = document.getElementById("primary");
 
-        // Empty box
-        var Box = document.getElementById('box');
+    // Empty box
+    var Box = document.getElementById("box");
 
-        // event handing
-        myButton.addEventListener('click', () => {
-            let typedContent = myInputBox.value;
+    // event handing
+    myButton.addEventListener("click", () => {
+      let typedContent = myInputBox.value;
 
-            // character count only
-            let words = typedContent.split(' ');
-            let count = words.length;
+      // character count only
+      let words = typedContent.split(" ");
+      let count = words.length;
 
-            // Inside the box word count number only.
-            Box.innerHTML = `<h1>${count}</h1>`;
-        });
+      // Inside the box word count number only.
+      Box.innerHTML = `<h1>${count}</h1>`;
+    });
 
     // Use arrow function - not recommended
     // myButton.addEventListener("click",() => {
@@ -80,7 +80,7 @@
     // setTimeout(() => {
     //     console.log(examInstruction)
     // }, timer);
-    
+
     // Ithu Birthday wishes countdown program
     // var wishes = "Happy Birthday !!!";
     // var countDown = 10;
@@ -92,7 +92,5 @@
     //         clearInterval(birthday);
     //     }
     // }, 1000);
-
-
-</script>
+  </script>
 </html>

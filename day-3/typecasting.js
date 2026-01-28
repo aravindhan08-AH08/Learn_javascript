@@ -29,4 +29,4 @@ var z = String(amount);
 // console.log(z, typeof z)
 // !! Option 2
 console.log(amount.toString());
-Collapse
+Collapse;

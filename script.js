@@ -1,82 +1,45 @@
-// Find the tempature
-let tempature = [25, 28, 30, 24, 26, 23, 31];
-// This is For loop method
-// let output = [];
-// for (let i = 0; i < tempature.length; i = i + 1){
-//     if (tempature[i] > 25) {
-//         output.push(tempature[i]);
-//     }
-// }
-// console.log(output);
+console.log("Hello World!");
 
-// This is filter method
-// New method and faster method
-// let maxTemp = tempature.filter((t) => {
-//     let hightemp = 0;
-//     if (t > 25) {
-//         hightemp = t;
-//         return hightemp;
-//     }
-// });
-// console.log(maxTemp);
+var myBtn = document.getElementById("submit");
 
-// let numbers = [55, 26, 17, 0, 23, 9, 0, 81];
-// let output = []
-// // This array remove the zero value but use the filter method
-// let nonZero = numbers.filter((n) => {
-//     if (n !== 0) {
-//         output.push(n);
-//     }
-// });
-// console.log(output)
+myBtn.addEventListener("click", () => {
+  alert("hello world");
+  prompt("enter the number");
+});
 
-// let marks = [45, 67, 89, 90, 34, 23, 78, 56];
+/* 
+width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        background-color: cornflowerblue;
+        border-radius: 8px;
+        color: white;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+*/
 
-// add 7 marks in each subject
-// let addMarks = marks.map((m) => {
-    // return m + 7;
-    // add 7 marks to the entries less than 60
-//     if (m < 60) {
-//         return m + 7;
-//     }
-//     else {
-//         return m;
-//     }
-// });
+var myDiv = document.createElement("div");
 
-// console.log(addMarks);
+// Step 2 -> Adding my css
+myDiv.style.width = "500px";
+myDiv.style.height = "500px";
+myDiv.style.border = "1px solid black";
+myDiv.style.backgroundColor = "cornflowerblue";
+myDiv.style.color = "white";
+myDiv.style.borderRadius = "8px";
+myDiv.style.fontSize = "25px";
+myDiv.style.display = "flex";
+myDiv.style.alignItems = "center";
+myDiv.style.justifyContent = "center";
 
-// capital and country change to country to capital
-let countries = {
-    'india': 'delhi',
-    'japan': 'tokyo',
-    'france': 'paris',
-    'italy': 'rome',
-    'australia': 'canberra'
-}
+// method 1
+// myDiv.innerHTML = "Welcome to JS(JavaScript)"
 
-// Output 
-/*{
-'india': 'delhi',
-'france': 'paris',
-'australia': 'canberra'
-}*/
+// method 2
+var content = "Welcome to JS(JavaScript)";
+myDiv.innerHTML = `<h1>${content}</h1>`;
 
-// let output = {};
-// for (let key of Object.keys(countries)) {
-//     let country = key;
-//     let capital = countries[key]
-//     console.log(country, capital);
-// }
-
-// another method
-let output = {};
-for (let key of Object.keys(countries)) {
-    let country = key;
-    let capital = countries[key]
-    output[capital] = country;
-    // delete in JavaScript
-    delete countries[key];
-}
-
-console.log(output);
+// Step 3 -> ithu ella na output yetthum varathu
+// document.body.appendChild(myDiv);

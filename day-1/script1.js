@@ -6,7 +6,8 @@
 // var area = (22 / 7) * radius * radius;
 // console.log(area);
 
-var x = 10 , y = 20;
+var x = 10,
+  y = 20;
 
 // var z = x + y;
 // console.log(z);
@@ -42,11 +43,10 @@ Mela write panna code la short ah pannalam variable use pannama.
 // console.log(x / y);
 // console.log(y % x);
 
-// // boolean 
+// // boolean
 // var userStatus = true;
 // console.log(userStatus);
 // userStatus = false;
-
 
 // // null
 // var myStatus = null;
@@ -59,35 +59,30 @@ Mela write panna code la short ah pannalam variable use pannama.
 
 // Conditions
 var age = 19;
-if(age > 18){
-    console.log("You are eligible to vote");
-}
-else{
-    console.log("You are no eligible to vote");
+if (age > 18) {
+  console.log("You are eligible to vote");
+} else {
+  console.log("You are no eligible to vote");
 }
 
 // else if
 var marks = 75;
-if(marks >= 90){
-    console.log("You got A grade");
-}
-else if(marks >= 75){
-    console.log("You got B grade");
-}
-else{
-    console.log("You got C grade");
+if (marks >= 90) {
+  console.log("You got A grade");
+} else if (marks >= 75) {
+  console.log("You got B grade");
+} else {
+  console.log("You got C grade");
 }
 
 // Add or even check
 var number = 7;
-if(number % 2 == 0){
-    console.log("The number is even");
-}
-else if(number % 2 != 0){
-    console.log("The number is odd");
-}
-else{
-    console.log("The number is not valid");
+if (number % 2 == 0) {
+  console.log("The number is even");
+} else if (number % 2 != 0) {
+  console.log("The number is odd");
+} else {
+  console.log("The number is not valid");
 }
 
 // Sathya sir odathu
@@ -162,7 +157,6 @@ if (age > 18) {
 } else {
   console.log("invalid input");
 }
-
 
 x = 42;
 

@@ -1,65 +1,82 @@
-// let arr = [1,2,3,4,5];
-
-// for(let i = 0; i < arr.length; i = i + 1){
-//     console.log(arr[i])
+// Find the tempature
+let tempature = [25, 28, 30, 24, 26, 23, 31];
+// This is For loop method
+// let output = [];
+// for (let i = 0; i < tempature.length; i = i + 1){
+//     if (tempature[i] > 25) {
+//         output.push(tempature[i]);
+//     }
 // }
+// console.log(output);
 
+// This is filter method
+// New method and faster method
+// let maxTemp = tempature.filter((t) => {
+//     let hightemp = 0;
+//     if (t > 25) {
+//         hightemp = t;
+//         return hightemp;
+//     }
+// });
+// console.log(maxTemp);
 
-// let el = 0
-// // For in loop
-// for(let index in arr){
-//     console.log(arr[index])
-// }
+// let numbers = [55, 26, 17, 0, 23, 9, 0, 81];
+// let output = []
+// // This array remove the zero value but use the filter method
+// let nonZero = numbers.filter((n) => {
+//     if (n !== 0) {
+//         output.push(n);
+//     }
+// });
+// console.log(output)
 
-// // For of loop
-// for(let value of arr){
-//     console.log(value)
-// }
+// let marks = [45, 67, 89, 90, 34, 23, 78, 56];
 
-var a = [1,2,3];
-var b = ['a', 'b', 'c'];
+// add 7 marks in each subject
+// let addMarks = marks.map((m) => {
+// return m + 7;
+// add 7 marks to the entries less than 60
+//     if (m < 60) {
+//         return m + 7;
+//     }
+//     else {
+//         return m;
+//     }
+// });
 
-// This is use only use array concat method
-var result = [...a, ...b];
-console.log(result);
-// [1,2,3,'a',b','c']
+// console.log(addMarks);
 
-var userDetails = {
-    name: 'Tony Stark',
-    accupation: 'Iron Man - Avenger'
+// capital and country change to country to capital
+let countries = {
+  india: "delhi",
+  japan: "tokyo",
+  france: "paris",
+  italy: "rome",
+  australia: "canberra",
 };
 
-var skills = {
-    skills: ['Businessman', 'Philantrophist'],
-    netWorth: 20000000
-};
+// Output
+/*{
+'india': 'delhi',
+'france': 'paris',
+'australia': 'canberra'
+}*/
 
-var superHero = {
-    ...userDetails,
-    ...skills
+// let output = {};
+// for (let key of Object.keys(countries)) {
+//     let country = key;
+//     let capital = countries[key]
+//     console.log(country, capital);
+// }
+
+// another method
+let output = {};
+for (let key of Object.keys(countries)) {
+  let country = key;
+  let capital = countries[key];
+  output[capital] = country;
+  // delete in JavaScript
+  delete countries[key];
 }
 
-console.log(superHero)
-
-let user = { name: 'John', age: 30};
-// add one more key value -> "isAdmin": true to the above user
-var newUser = {...user, isAdmin: true};
-console.log(newUser);
-// create two variable 'name' and 'age' from the user using rest operator
-var {name, age} = user;
-console.log(name, age);
-
-
-const response = {
-    username: 'john',
-    token: 'abc123',
-    roleID: 'admin',
-    profile: 'manager'
-};
-
-// username and token -> one separate object -> credentials
-// roleID and profile -> another separate object -> myProfile
-let {username, token, ...myProfile} = response;
-console.log(myProfile);
-
-
+console.log(output);

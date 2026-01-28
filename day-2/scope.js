@@ -10,20 +10,20 @@ function printVariable() {
   console.log("this is a print statement");
 }
 
-console.log(x)
+console.log(x);
 
 /* 
 function functionName(){
     // block of statements
 }
 */
-function areaOfCircle(r) { 
-    // find the area 
-    console.log(x) // 10
-    const pi = 3.14
-    let area = pi * r * r
-    console.log(area) // 314
+function areaOfCircle(r) {
+  // find the area
+  console.log(x); // 10
+  const pi = 3.14;
+  let area = pi * r * r;
+  console.log(area); // 314
 }
 
-areaOfCircle(10)
-printVariable()
+areaOfCircle(10);
+printVariable();

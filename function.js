@@ -16,9 +16,9 @@
 // output -> area
 // test case -> 20,30 -> 600
 
-function areaOfRectangle(length, breath){
-    let area = length * breath;
-    return area;
+function areaOfRectangle(length, breath) {
+  let area = length * breath;
+  return area;
 }
 
 console.log(areaOfRectangle(20, 30));
@@ -31,37 +31,37 @@ console.log(areaOfRectangle(20, 30));
 // test case -> 5,10 -> 2 * (l + b)= 2*(5+10) = 2 *(15) = 30
 
 // function declaration
-function perimeterOfRectangle(length, breath){
-    let perimeter = 2 * (length + breath);
-    return perimeter;
+function perimeterOfRectangle(length, breath) {
+  let perimeter = 2 * (length + breath);
+  return perimeter;
 }
 
 console.log(perimeterOfRectangle(5, 10));
 
-let areaOfCircle = function(length, breath){
-    let area = length * breath;
-    return area;
-}
+let areaOfCircle = function (length, breath) {
+  let area = length * breath;
+  return area;
+};
 
 console.log(areaOfRectangle(20, 30));
 
-let perimeterOfRectangle = function(length, breath){
-    let perimter = 2 * (length + breath);
-    return perimeter;
-}
+let perimeterOfRectangle = function (length, breath) {
+  let perimter = 2 * (length + breath);
+  return perimeter;
+};
 
 console.log(perimeterOfRectangle(5, 10));
 
 // arrow function
 let areaOfRectangle = (length, breath) => {
-    let area = length * breath;
-    return area;
-}
+  let area = length * breath;
+  return area;
+};
 console.log(areaOfRectangle(20, 30));
 
 let perimeterOfRectangle = (length, breath) => {
-    let perimeter = 2 * (length + breath);
-    return perimeter;
-}
+  let perimeter = 2 * (length + breath);
+  return perimeter;
+};
 
 console.log(perimeterOfRectangle(5, 10));

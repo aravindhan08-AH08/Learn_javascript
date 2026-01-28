@@ -1,5 +1,5 @@
 // let n = [2,4,6,8,10];
-// // arrowfunction or 
+// // arrowfunction or
 // n.forEach((el)) => {
 //     console.log(el*2);
 // }
@@ -43,13 +43,12 @@ let n = ["87", "91", "88", "93", "81"];
 // });
 // console.log(revisedmark);
 
-let numbers = ['1', '2', '3']
+let numbers = ["1", "2", "3"];
 let revisedmark = numbers.map((num, index) => {
-    console.log('index: ' + index);
-    console.log('number: ' + num);
+  console.log("index: " + index);
+  console.log("number: " + num);
 });
 
 let a = numbers.map((num, index, arr) => {
-    console.log('array: ' + arr);
+  console.log("array: " + arr);
 });
-

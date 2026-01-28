@@ -28,7 +28,6 @@
 // countries[10] = "australia";
 // console.log(countries);
 
-
 var x = [16, 25, 29, 7, 18];
 // console.log(x[3]); // 7
 // console.log(x.length); // 5
@@ -56,7 +55,6 @@ countries = ["india", "japan", "china", "usa", "uk", "france"];
 //     }
 // }
 
-
 // for of loop
 // for (let name of countries){
 //     console.log(name);
@@ -70,14 +68,14 @@ numbers = [10, 20, 30, 40, 50];
 //     console.log(n);
 // });
 
-var printDouble = function(n) { 
-    console.log(n*2);
+var printDouble = function (n) {
+  console.log(n * 2);
 };
 
 // Option 1 using loop
-for (let i in numbers){
-    printDouble(numbers[i]);
+for (let i in numbers) {
+  printDouble(numbers[i]);
 }
 // option 2 using for each
-console.log("Using for each method")
+console.log("Using for each method");
 numbers.forEach(printDouble);

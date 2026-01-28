@@ -72,3 +72,12 @@ classList
 style
 JavaScript
 closures
+
+create a div
+- internel css
+
+- width : 500px
+- height : 500px
+- border clr: black
+- border type: solid
+- 

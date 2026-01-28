@@ -15,7 +15,7 @@ console.log(parseInt(22 / 2)); // 11 -> 11
 console.log(parseInt(9 / 90)); // 0.10 -> 0
 
 // parseFloat
-console.log("demo for parsefloat")
+console.log("demo for parsefloat");
 console.log(parseFloat(36 / 6)); // 6 -> 6
 console.log(parseFloat(2 / 2)); // 1 -> 1
 console.log(parseFloat(22 / 2)); // 11 -> 11

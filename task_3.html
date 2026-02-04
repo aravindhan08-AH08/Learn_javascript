@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <style>
+    .container {
+        text-align: center;
+    }
+
+    #value {
+        font-size: 64px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .btn-group button {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+        margin: 0 8px;
+        background-color: #0d6efd;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .btn-group button:hover {
+        background-color: #0b5ed7;
+    }
+
+    .step {
+        margin: 20px 0;
+    }
+
+    .step input {
+        width: 80px;
+        padding: 5px;
+        margin-left: 8px;
+    }
+
+    #reset {
+        padding: 10px 25px;
+        font-size: 16px;
+        width: 120px;
+        background-color: #0d6efd;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    #reset:hover {
+        background-color: #0b5ed7;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="value">0</div>
+
+      <div class="btn-group">
+
+        <button id="minus">-</button>
+        <button id="plus">+</button>
+
+        <div class="step">
+      Increment/Decrement by:
+      <input type="number" id="step" placeholder="Enter Number">
+      </div>
+      <button id="reset">Reset</button>
+    </div>
+  </body>
+  <script src="./task3.js"></script>
+</html>

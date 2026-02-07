@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box">
+      <button id="Btn">click</button>
+      <div id="img"></div>
+    </div>
+    <script>
+      const clickbtn = document.getElementById("Btn");
+      const image = document.getElementById("img");
+
+      clickbtn.addEventListener("click", () => {
+          image.innerHTML = `
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF7WWSZ1BTJhCPxOa7_CQOjLR8iuLtsDb-Tw&s">`;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Login</title>
+  </head>
+  <body>
+    <h2>Login Page</h2>
+
+    <input type="text" id="username" placeholder="Username" />
+    <button onclick="login()">Login</button>
+
+    <script>
+      // Already login irundha direct home ku po
+      if (localStorage.getItem("isLoggedIn") === "true") {
+        window.location.href = "home.html";
+      }
+
+      function login() {
+        let user = document.getElementById("username").value;
+
+        if (user !== "") {
+          localStorage.setItem("isLoggedIn", "true");
+          window.location.href = "home.html";
+        } else {
+          alert("Enter username");
+        }
+      }
+    </script>
+  </body>
+</html>

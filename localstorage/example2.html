@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Local Storage Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      input,
+      button {
+        padding: 8px;
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Local Storage Example</h2>
+
+    <input type="text" id="username" placeholder="Enter your name" />
+
+    <br /><br />
+
+    <button onclick="saveName()">Save Name</button>
+    <button onclick="showName()">Show Name</button>
+    <button onclick="removeName()">Remove Name</button>
+
+    <p id="output"></p>
+
+    <script>
+      function saveName() {
+        let name = document.getElementById("username").value;
+
+        if (name === "") {
+          alert("Please enter a name");
+          return;
+        }
+
+        // Save only — NO output display
+        localStorage.setItem("username", name);
+
+        // Optional: clear input box after save
+        document.getElementById("username").value = "";
+      }
+
+      function showName() {
+        let storedName = localStorage.getItem("username");
+
+        if (storedName) {
+          document.getElementById("output").innerText =
+            "Stored name: " + storedName;
+        } else {
+          document.getElementById("output").innerText = "No name saved ❗";
+        }
+      }
+
+      function removeName() {
+        localStorage.removeItem("username");
+        document.getElementById("output").innerText = "Name removed ❌";
+      }
+    </script>
+  </body>
+</html>

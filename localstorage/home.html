@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <h2>Home Page</h2>
+    <button onclick="logout()">Logout</button>
+
+    <script>
+      // Login illana thirumba login page ku anupu
+      if (localStorage.getItem("isLoggedIn") !== "true") {
+        window.location.href = "login.html";
+      }
+
+      function logout() {
+        localStorage.removeItem("isLoggedIn");
+        window.location.href = "login.html";
+      }
+    </script>
+  </body>
+</html>

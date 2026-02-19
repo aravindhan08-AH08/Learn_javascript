@@ -1,0 +1,23 @@
+<!-- Asynchronous Code
+ 
+ithu ypdi na Heavy task run athu kuda inor button erukku athu kuda athoda work paakum but Synchronous apdi illa athu heavy task run aana athu Frontend hang aaidum-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asynchronous Non-Blocking Example</title>
+  </head>
+  <body>
+    <button onclick="nonBlockingTask()">Run Heavy Task</button>
+    <button onclick="alert('Clicked!!')">Click Me</button>
+    <script>
+      function nonBlockingTask() {
+        setTimeout(() => {
+          alert("Heavy Task Finished!");
+        }, 5000);
+      }
+    </script>
+  </body>
+</html>

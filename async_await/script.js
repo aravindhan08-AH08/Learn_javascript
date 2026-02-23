@@ -1,5 +1,5 @@
 // Fetch code in using Async Await in the fetch code.
-// And then pratice for the Async Await
+// And then practice for the Async Await
 async function loadProducts() {
     try{
         const response = await fetch(

@@ -7,50 +7,41 @@ const result = document.getElementById("result");
 const button = document.getElementById("calculate");
 
 button.addEventListener("click", () => {
-  const a = num1.value;
-  const b = num2.value;
+    const a = num1.value;
+    const b = num2.value;
 
-  // 🔴 Empty input check
-  if (a === "" || b === "") {
-    result.textContent = "Please enter both numbers";
-    return;
-  }
+    if (a === "" || b === "") {
+        result.textContent = "Please enter both numbers";
+        return;
+    }
 
-  const n1 = parseFloat(a);
-  const n2 = parseFloat(b);
-  const op = operator.value;
+    const n1 = parseFloat(a);
+    const n2 = parseFloat(b);
+    const op = operator.value;
 
-  let output;
+    let output;
 
-  // 🧠 Clean switch logic
-  switch (op) {
-    case "+":
-      output = add(n1, n2);
-      break;
+    if (op === "+") {
+        output = add(n1, n2);
 
-    case "-":
-      output = subtract(n1, n2);
-      break;
+    } else if (op === "-") {
+        output = subtract(n1, n2);
 
-    case "*":
-      output = multiply(n1, n2);
-      break;
+    } else if (op === "*") {
+        output = multiply(n1, n2);
 
-    case "/":
-      if (n2 === 0) {
-        output = "Cannot divide by zero";
-      } else {
-        output = divide(n1, n2);
-      }
-      break;
+    } else if (op === "/") {
+        if (n2 === 0) {
+            output = "Cannot divide by zero";
+        } else {
+            output = divide(n1, n2);
+        }
 
-    default:
-      output = "Invalid operator";
-  }
+    } else {
+        output = "Invalid operator";
+    }
 
-  // 🟢 Show result
-  result.textContent = "Result: " + output;
+    result.textContent = "Result: " + output;
 
-  // 🟣 Default function call
-  logResult(output);
+    logResult(output);
 });

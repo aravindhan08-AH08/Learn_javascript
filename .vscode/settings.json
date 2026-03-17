@@ -4,5 +4,6 @@
         "kudukkanum",
         "panirukkom",
         "tempature"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
